@@ -80,11 +80,20 @@
         $(function(){
           $("#footer-import").load("https://bashit.me/assets/html/footer-bright.html"); 
         });
-        document.title = "Legacy Projects";
     </script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
     <script src="assets/js/script.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            setTimeout(function(){
+                document.title = "Legacy Projects"
+            },300);
+            // Just to be safe
+            setTimeout(function(){
+                document.title = "Legacy Projects"
+            },2000);
+        });
+    </script>
 </body>
-
 </html>
